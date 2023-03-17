@@ -1,7 +1,6 @@
 import { useRef } from 'react';
 
 // Uncontrolled Forms: The forms are not bound by state, instead their values are pulled using a ref when needed.
-
 function UncontrolledForm() {
   // useRef to get access to a DOM node like an input
   // create a new ref, and then assign it to the form input
