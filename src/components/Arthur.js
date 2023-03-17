@@ -6,9 +6,10 @@ function Arthur() {
   };
   // Object.keys(Arthur) returns array of strings that are keys of the object's properties
   // map returns an array of results of calling the function on each element in the keys array
-  const arthurDetails = Object.keys(Arthur).map((key) => {
+  // each element in the map array has to be unique
+  const arthurDetails = Object.keys(Arthur).map((key, index) => {
     return (
-      <div>
+      <div key={index}>
         {key} : {Arthur[key]}
       </div>
     );
